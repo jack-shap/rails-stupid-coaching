@@ -1,0 +1,29 @@
+
+<div class="container ml-4">
+  <div class="col-md-6 mb-3">
+    <h1> Stupid Coaching </h1>
+  </div>
+  <div class="row border-start border-secondary border-5 p-3 mb-2">
+    <div class="col-md-6 mb-3" >
+      <%= params[:question] %>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-md-6">
+      <p><em> -You </em></p>
+     </div>
+  </div>
+  <div class="row border-start border-secondary border-5 p-3 mb-2 bg-warning text-dark" style="--bs-bg-opacity: .25;">
+    <div class="col-md-6 mb-3">
+    <%= @coach_answer %>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-md-6">
+    <p><em>  -Your Coach </em></p>
+      </div>
+  </div>
+  <div class="row mb-1">
+    <p> <%= link_to "Ask a new question", ask_path, class: "text-decoration-none" %> <p>
+  </div>
+</div>
+
+</div>
